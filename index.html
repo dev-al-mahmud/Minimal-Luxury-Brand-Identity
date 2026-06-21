@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoress — Data-Driven SEO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#0A0A08',
+                        parchment: '#F5F2ED',
+                        champagne: '#B59A6E',
+                        subdue: '#6B6560',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .tracking-brand { letter-spacing: 0.04em; }
+        .tracking-label { letter-spacing: 0.1em; }
+        .tracking-h2 { letter-spacing: 0.05em; }
+        .tracking-h1 { letter-spacing: -0.02em; }
+        
+        /* Custom luxury input styling */
+        .form-input {
+            background: transparent;
+            border-bottom: 1px solid #6B6560;
+            outline: none;
+            width: 100%;
+            padding: 12px 0;
+            color: #F5F2ED;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.875rem;
+            transition: border-color 0.3s ease;
+        }
+        .form-input:focus {
+            border-bottom-color: #B59A6E;
+        }
+        .form-input::placeholder {
+            color: #6B6560;
+        }
+    </style>
+</head>
+<body class="bg-obsidian text-parchment font-sans antialiased">
+
+    <!-- ========================================== -->
+    <!-- NAVIGATION BAR                             -->
+    <!-- ========================================== -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-obsidian/80 backdrop-blur-md border-b border-subdue/10">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-5 md:px-12">
+            <a href="#" class="font-serif text-2xl font-light tracking-brand text-parchment">
+                Victoress
+            </a>
+            <div class="hidden md:flex items-center gap-10">
+                <a href="#" class="font-sans text-xs font-medium tracking-label uppercase text-parchment">Home</a>
+                <a href="#products" class="font-sans text-xs font-medium tracking-label uppercase text-subdue hover:text-parchment transition-colors">Products</a>
+                <a href="#contact" class="font-sans text-xs font-medium tracking-label uppercase text-subdue hover:text-parchment transition-colors">Contact</a>
+                <a href="#" class="ml-4 border border-champagne text-champagne font-sans text-xs font-medium tracking-label uppercase px-6 py-2.5 hover:bg-champagne hover:text-obsidian transition-all duration-300">
+                    SEO Growth
+                </a>
+            </div>
+            <!-- Mobile Menu Icon -->
+            <button class="md:hidden text-parchment">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- HERO SECTION                               -->
+    <!-- ========================================== -->
+    <section class="min-h-screen flex items-center pt-24 pb-16 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="max-w-3xl">
+                <p class="font-sans text-xs font-medium tracking-label uppercase text-champagne mb-6">Search Engine Optimization</p>
+                <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-light tracking-h1 leading-[0.95] text-parchment mb-8">
+                    Scale Your Business With Data Driven SEO
+                </h1>
+                <p class="font-sans text-base md:text-lg text-subdue leading-relaxed max-w-xl mb-10">
+                    We strip away the noise. Precision strategies, uncompromising analytics, and bespoke tools designed to elevate market leaders above the digital friction.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#products" class="inline-block bg-parchment text-obsidian font-sans text-xs font-medium tracking-label uppercase px-10 py-4 text-center hover:bg-champagne transition-colors duration-300">
+                        Explore Tools
+                    </a>
+                    <a href="#contact" class="inline-block border border-subdue/40 text-parchment font-sans text-xs font-medium tracking-label uppercase px-10 py-4 text-center hover:border-parchment transition-colors duration-300">
+                        Book Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- PRODUCTS / PRICING SECTION                 -->
+    <!-- ========================================== -->
+    <section id="products" class="px-6 md:px-12 pb-32">
+        <div class="max-w-7xl mx-auto">
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-16 border-t border-subdue/20 pt-12">
+                <div>
+                    <p class="font-sans text-xs font-medium tracking-label uppercase text-champagne mb-4">Precision Instruments</p>
+                    <h2 class="font-serif text-4xl md:text-5xl font-light tracking-h2 text-parchment">Our Products</h2>
+                </div>
+                <p class="font-sans text-sm text-subdue max-w-md mt-4 md:mt-0 leading-relaxed">
+                    Purpose-built solutions for audit, tracking, and authority building. No bloated features—only what yields results.
+                </p>
+            </div>
+
+            <!-- Pricing Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1: SEO Audit Pro -->
+                <div class="border border-subdue/20 p-8 md:p-10 flex flex-col justify-between hover:border-champagne/50 transition-colors duration-500 group">
+                    <div>
+                        <p class="font-sans text-xs font-medium tracking-label uppercase text-subdue mb-6">Diagnostic</p>
+                        <h3 class="font-serif text-2xl font-light tracking-h2 text-parchment mb-4">SEO Audit Pro</h3>
+                        <div class="flex items-baseline gap-2 mb-8">
+                            <span class="font-serif text-5xl font-light text-parchment">$199</span>
+                            <span class="font-sans text-sm text-subdue">/lifetime</span>
+                        </div>
+                        <ul class="space-y-3 mb-12">
+                            <li class="flex items-center gap-3 text-sm text-subdue">
+                                <span class="w-1.5 h-1.5 bg-champagne rounded-full"></span>
+                                Complete technical health scan
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-subdue">
+                                <span class="w-1.5 h-1.5 bg-champagne rounded-full"></span>
+                                Core web vitals assessment
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-subdue">
+                                <span class="w-1.5 h-1.5 bg-champagne rounded-full"></span>
+                                Actionable prioritization matrix
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="block text-center border border-parchment text-parchment font-sans text-xs font-medium tracking-label uppercase px-8 py-4 hover:bg-parchment hover:text-obsidian transition-all duration-300">
+                        Get Access
+                    </a>
+                </div>
+
+                <!-- Card 2: Rank Tracker (Featured) -->
+                <div class="border border-champagne p-8 md:p-10 flex flex-col justify-between relative bg-subdue/5">
+                    <div class="absolute -top-3 left-8 bg-champagne text-obsidian font-sans text-xs font-medium tracking-label uppercase px-4 py-1">
+                        Essential
+                    </div>
+                    <div>
+                        <p class="font-sans text-xs font-medium tracking-label uppercase text-champagne mb-6">Monitoring</p>
+                        <h3 class="font-serif text-2xl font-light tracking-h2 text-parchment mb-4">Rank Tracker</h3>
+                        <div class="flex items-baseline gap-2 mb-8">
+                            <span class="font-serif text-5xl font-light text-parchment">$49</span>
+                            <span class="font-sans text-sm text-subdue">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-12">
+                            <li class="flex items-center gap-3 text-sm text-subdue">
+                                <span class="w-1.5 h-1.5 bg-champagne rounded-full"></span>
+                                Daily keyword position updates
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-subdue">
+                                <span class="w-1.5 h-1.5 bg-champagne rounded-full"></span>
+                                Competitor discrepancy tracking
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-subdue">
+                                <span class="w-1.5 h-1.5 bg-champagne rounded-full"></span>
+                                White-label PDF reporting
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="block text-center bg-parchment text-obsidian font-sans text-xs font-medium tracking-label uppercase px-8 py-4 hover:bg-champagne transition-colors duration-300">
+                        Subscribe
+                    </a>
+                </div>
+
+                <!-- Card 3: Backlink Builder -->
+                <div class="border border-subdue/20 p-8 md:p-10 flex flex-col justify-between hover:border-champagne/50 transition-colors duration-500 group">
+                    <div>
+                        <p class="font-sans text-xs font-medium tracking-label uppercase text-subdue mb-6">Authority</p>
+                        <h3 class="font-serif text-2xl font-light tracking-h2 text-parchment mb-4">Backlink Builder</h3>
+                        <div class="flex items-baseline gap-2 mb-8">
+                            <span class="font-serif text-5xl font-light text-parchment">$299</span>
+                            <span class="font-sans text-sm text-subdue">/year</span>
+                        </div>
+                        <ul class="space-y-3 mb-12">
+                            <li class="flex items-center gap-3 text-sm text-subdue">
+                                <span class="w-1.5 h-1.5 bg-champagne rounded-full"></span>
+                                Premium domain prospecting
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-subdue">
+                                <span class="w-1.5 h-1.5 bg-champagne rounded-full"></span>
+                                Automated outreach sequences
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-subdue">
+                                <span class="w-1.5 h-1.5 bg-champagne rounded-full"></span>
+                                Link toxicity analysis
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="block text-center border border-parchment text-parchment font-sans text-xs font-medium tracking-label uppercase px-8 py-4 hover:bg-parchment hover:text-obsidian transition-all duration-300">
+                        Get Access
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- CONTACT SECTION                            -->
+    <!-- ========================================== -->
+    <section id="contact" class="px-6 md:px-12 pb-32">
+        <div class="max-w-7xl mx-auto border-t border-subdue/20 pt-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+                <!-- Left Column: Text -->
+                <div>
+                    <p class="font-sans text-xs font-medium tracking-label uppercase text-champagne mb-4">Initiate a Dialogue</p>
+                    <h2 class="font-serif text-4xl md:text-5xl font-light tracking-h2 text-parchment mb-6">Let's Elevate Your Reach</h2>
+                    <p class="font-sans text-base text-subdue leading-relaxed mb-12 max-w-md">
+                        Our approach is deliberate and exclusive. Submit your details below, and a strategy director will be in touch within 24 hours.
+                    </p>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="font-sans text-xs font-medium tracking-label uppercase text-subdue mb-2">Email</p>
+                            <p class="font-sans text-base text-parchment">inquiries@victoress.com</p>
+                        </div>
+                        <div>
+                            <p class="font-sans text-xs font-medium tracking-label uppercase text-subdue mb-2">Location</p>
+                            <p class="font-sans text-base text-parchment">123 Luxe Avenue, New York, NY 10001</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Form -->
+                <div class="bg-subdue/5 border border-subdue/20 p-8 md:p-12">
+                    <form class="space-y-8" onsubmit="event.preventDefault(); alert('Form submitted successfully.');">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                            <div>
+                                <label class="font-sans text-xs font-medium tracking-label uppercase text-subdue block mb-2">First Name</label>
+                                <input type="text" class="form-input" placeholder="John" required>
+                            </div>
+                            <div>
+                                <label class="font-sans text-xs font-medium tracking-label uppercase text-subdue block mb-2">Last Name</label>
+                                <input type="text" class="form-input" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="font-sans text-xs font-medium tracking-label uppercase text-subdue block mb-2">Work Email</label>
+                            <input type="email" class="form-input" placeholder="john@company.com" required>
+                        </div>
+                        <div>
+                            <label class="font-sans text-xs font-medium tracking-label uppercase text-subdue block mb-2">How can we help?</label>
+                            <textarea class="form-input resize-none" rows="4" placeholder="Tell us about your growth objectives..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-parchment text-obsidian font-sans text-xs font-medium tracking-label uppercase px-8 py-4 hover:bg-champagne transition-colors duration-300 mt-4">
+                            Send Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                     -->
+    <!-- ========================================== -->
+    <footer class="border-t border-subdue/20 px-6 md:px-12 py-12">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <a href="#" class="font-serif text-xl font-light tracking-brand text-parchment">
+                Victoress
+            </a>
+            <div class="flex items-center gap-8">
+                <a href="#" class="font-sans text-xs text-subdue hover:text-parchment transition-colors">Privacy Policy</a>
+                <a href="#" class="font-sans text-xs text-subdue hover:text-parchment transition-colors">Terms of Service</a>
+            </div>
+            <p class="font-sans text-xs text-subdue">
+                © 2026 Victoress. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
